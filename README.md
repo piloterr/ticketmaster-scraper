@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.ticketmaster.com/suns-vs-jazz-kids-day-phoenix-arizona-01-24-2027/event/19006507A7257EEA",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -228,7 +228,7 @@ response = requests.get(
     params={
         "query": "jazz",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
